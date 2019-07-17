@@ -12,18 +12,25 @@
 document.onmousedown=function(ev){
 setTimeout(function (){
 
-
 var as = document.getElementsByTagName("h2");
 for(var i = 0; i < as.length; i++) {  
 var txt = as[i].innerText || as[i].textContent; 
-if(txt === "Attributes") { 
-as[i].setAttribute('class',"ysbq-sx");
-}
+if(txt === "Attributes") 
+{ as[i].setAttribute('class',"ysbq-sx");}
+
+if(txt === "Styles") 
+{ as[i].setAttribute('class',"ysbq-ys");}
+
  }
 
 var hhbys = document.getElementsByClassName("ysbq-sx")[0];
 hhbys.innerHTML="属性"
 
+var hhbys = document.getElementsByClassName("eruda-toggle-all-computed-style eruda-active-effect")[0];
+hhbys.innerHTML="加载样式"
+
+var hhbys = document.getElementsByClassName("ysbq-ys")[0];
+hhbys.innerHTML="样式"
 
 }, 100);
 }
