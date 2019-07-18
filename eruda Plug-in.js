@@ -8,12 +8,6 @@
 // @grant        none
 // ==/UserScript==
 
-var hm = document.createElement("script");
-hm.src = "https://cdn.bootcss.com/eruda/1.3.0/eruda.min.js";
-hm.onload=function(){eruda.init()};
-var s = document.getElementsByTagName("title")[0]; 
-s.parentNode.insertBefore(hm, s);
-
 
 //下面是汉化项目
 document.onmousedown=function(ev){
